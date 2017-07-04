@@ -21,7 +21,7 @@ class CreateTableOrder extends Migration
             $table->integer('share_user_id')->nullable()->comment('nguoi phan don');
             $table->integer('receive_user_id')->nullable()->comment('nguoi nhan don');
             #$table->integer('address_receive_id')->nullable()->comment('dia chỉ nhận đơn (đến lấy đơn)');
-            #$table->integer('address_destination_id')->nullable()->comment('đích đến của đơn');
+            $table->integer('address_destination_id')->nullable()->comment('đích đến của đơn');
             $table->double('cod_money', 20, 2)->nullable()->default(0)->comment('tiền code COD');//tong gia tri don hang - NDT
             $table->integer('package_order_id')->nullable()->comment('can nang , khoi luong cua don hang');
             $table->string('payment_user')->nullable()->comment('nguoi gui hay nguoi nhan thanh toan');
