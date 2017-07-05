@@ -1,0 +1,145 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+body {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    background-color: #000;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.wrap-login {
+    font-family: 'Roboto-Light'!important;
+    color: #fff;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    width: 400px;
+    display: inline-block;
+}
+.wrap-login.login-5sao {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.login-5sao .title {
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: 'Roboto-Regular';
+}
+.login-5sao .title-login {
+    font-size: 24px;
+}
+.login-5sao .title-login-dri {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #848485;
+}
+.login-5sao form {
+    padding: 30px 50px 10px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+.link-login {
+    margin-bottom: 50px;
+}
+.link-login li {
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+.link-login li a {
+    text-transform: uppercase;
+    color: #ddd;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.link-login li.active a, .link-login li a:hover {
+    border-bottom: solid 3px #00e676;
+    font-family: 'Roboto-Bold';
+    color: #00e676;
+}
+
+.login-5sao .group-ip-animate {
+    display: inline-block;
+    width: 100%;
+}
+.group-ip-animate {
+    position: relative;
+}
+.log-input {
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #9c9d9c;
+    outline: 0;
+    width: 100%;
+    font-size: 26px;
+    padding: 15px 5px 10px 5px;
+}
+.log-input {
+    padding: 8px 5px;
+    margin-top: 10px;
+}
+.login-5sao .log-input {
+    font-size: 14px;
+    color: #000;
+}
+.login-5sao .log-input, .login-5sao .log-input:focus, .login-5sao .log-input:hover {
+    border-bottom: 1px solid #ddd;
+}
+.group-ip-animate .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.group-ip-animate label {
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 20px;
+    transition: .2s ease all;
+    -moz-transition: .2s ease all;
+    -webkit-transition: .2s ease all;
+}
+.login-5sao .group-ip-animate label {
+    color: #ababab;
+    font-size: 14px;
+}
+.group-ip-animate input:focus ~ label, .group-ip-animate input.ok ~ label {
+    top: 5px;
+    font-size: 11px;
+    color: #ddd;
+}
+.login-5sao .group-ip-animate input:focus ~ label, .login-5sao .group-ip-animate input.ok ~ label {
+    color: #ababab;
+}
