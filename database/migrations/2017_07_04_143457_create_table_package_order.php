@@ -20,8 +20,9 @@ class CreateTablePackageOrder extends Migration
             $table->double('net_weight', 20, 2)->nullable()->comment('can nang tinh');
             $table->double('convert_weight',20,2)->nullable()->comment('can nang quy doi');
             $table->double('height',20,2)->nullable()->comment('chieu cao của goi hang');
-            $table->double('length')->nullable()->comment('chieu dai');
-            $table->double('width')->nullable()->comment('chieu rong');
+            $table->double('length',20,2)->nullable()->comment('chieu dai');
+            $table->double('width',20,2)->nullable()->comment('chieu rong');
+            $table->string('type',50)->nullable()->comment('của khách nhập hay cty nhập');
             $table->text('description')->nullable()->comment('ghi chu cho hang hoa');
             $table->timestamps();
         });
