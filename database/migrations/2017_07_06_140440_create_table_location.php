@@ -13,7 +13,7 @@ class CreateTableLocation extends Migration
      */
     public function up()
     {
-        Schema::create('location', function (Blueprint $table) {
+        Schema::create('locations', function (Blueprint $table) {
             $table->increments('id');
             $table->string('label',255)->nullable()->comment('ten cua dia danh');
             $table->string('key_code',255)->nullable()->comment('code');
@@ -25,7 +25,7 @@ class CreateTableLocation extends Migration
             $table->integer('ordering')->nullable()->comment('thu tu săp xep');
             $table->string('logistic_code',10)->nullable();
             $table->string('warehouse',10)->nullable()->comment('chinh la hub');
-            
+
             $table->timestamps();
         });
     }
@@ -37,6 +37,6 @@ class CreateTableLocation extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('location');
+        Schema::dropIfExists('locations');
     }
 }
